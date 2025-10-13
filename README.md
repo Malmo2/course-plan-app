@@ -4,11 +4,11 @@
 
 ## Design 
 
-# Desktop
+### Desktop
 
 ![Design Desktop](./images/design1.jpg)
 
-# Mobile
+### Mobile
 
 ![Design Mobile](./images/designmobile.jpg)
 
