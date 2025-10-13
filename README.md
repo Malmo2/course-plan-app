@@ -1,32 +1,36 @@
 # Course-plan
 
 
-## Course-plan re-structured
-
-
 
 ## Design 
 
 
 
+## Project Backlog and Overview
 
-## Backlog
+This document outlines the current backlog for the project.  
+The backlog will **constantly change and be updated** as development progresses.
 
-### Backlog will constantly change and be updated.
+---
+
+### Current backlog will constantly change and be updated.
+
 | Feature | Description | Priority | Milestone | Status |
-| ------- | ----------- | -------- | --------- | ------ |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
+| -------- | ------------ | -------- | ---------- | ------- |
+| **Boilerplate** | Simple HTML boilerplate for the base structure of the project | High | MVP | Todo |
+| **JS File** | Main JavaScript file to handle interactivity and functionality | High | MVP | Todo |
+| **CSS File** | Main CSS stylesheet for layout and design | High | MVP | Todo |
+| **Navbar** | Navigation menu with links to main sections | Moderate | MVP | Todo |
+| **Hero Section** | Introduction area with pitch and call-to-action | High | MVP | Todo |
+| **Main Section** | Primary content area of the page | Moderate | MVP | Todo |
+| **Footer** | Footer containing additional information and links | Moderate | MVP | Todo |
+| **Knowledge** | Defines knowledge requirements for the course | Moderate | MVP | Todo |
+| **Skills** | Defines skill requirements for the course | Moderate | MVP | Todo |
+| **Knowledge Assessment** | Overall evaluation of course knowledge | Moderate | MVP | Todo |
+| **Summative Assessment** | Retroactive and written tests to assess learning outcomes | Moderate | MVP | Todo |
+| **Formative Assessment** | Continuous evaluation of students' knowledge and skills during interactive course activities | Moderate | MVP | Todo |
+| **README.md** | Project documentation explaining setup, usage, and features | High | MVP | In Progress |
+
 
 
 
