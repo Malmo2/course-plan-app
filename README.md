@@ -32,6 +32,8 @@ The backlog will **constantly change and be updated** as development progresses.
 | **README.md** | Project documentation explaining setup, usage, and features | High | MVP | In Progress |
 
 
+### Kanban
+
 
 
 ## Color Palette
