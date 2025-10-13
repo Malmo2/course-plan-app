@@ -4,6 +4,9 @@
 
 ## Design 
 
+![Design Desktop](./images/design1.jpg)
+
+![Design Mobile](./images/designmobile.jpg)
 
 
 ## Project Backlog and Overview
@@ -34,7 +37,7 @@ The backlog will **constantly change and be updated** as development progresses.
 
 ### Kanban
 
-
+![Project Preview](./images/Backlog.png)
 
 ## Color Palette
 
