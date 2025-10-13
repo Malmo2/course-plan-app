@@ -1,12 +1,7 @@
 # Course-plan
 
+
 ## Course-plan re-structured
-
-
-
-
-## Pitch
-
 
 
 
@@ -37,7 +32,6 @@
 
 ## Color Palette
 
-![alt text](./images/colorpalette.png)
 
 
 ## Technologies
