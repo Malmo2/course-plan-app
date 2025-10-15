@@ -19,8 +19,14 @@
     align-items: center;
 }
 
-<<<<<<< HEAD
-=======
+
+#idris {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 
 .team-member {
   user-select: none;
@@ -46,7 +52,6 @@
 }
 
 
->>>>>>> adaa75440fe3b47c4bac5064781e07593e6d4062
 
 #mattias {
     border-radius: 50%;
@@ -56,7 +61,7 @@
     object-fit: cover;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
-<<<<<<< HEAD
+
 
 #benjame {
     width: 50px;
@@ -66,15 +71,3 @@
     margin: 5px;
     cursor: pointer;
 }
-=======
-
-
-#benjame  {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 5px;
-  cursor: pointer;
-}
->>>>>>> adaa75440fe3b47c4bac5064781e07593e6d4062
