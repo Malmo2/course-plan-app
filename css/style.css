@@ -1,40 +1,46 @@
 .team-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .team {
-    display: flex;
+  display: flex;
 }
 
 .links-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-<<<<<<< HEAD
 
 #mattias {
-    border-radius: 50%;
-    border: 3px solid gold;
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  border: 3px solid gold;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
 
-=======
-#benjame  {
+#benjame {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
   margin: 5px;
   cursor: pointer;
->>>>>>> 46951a293b5690bab6238108edfc796ed6b965c9
+}
+
+#emelie {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
 }
