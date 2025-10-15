@@ -1,0 +1,20 @@
+.team-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team {
+    display: flex;
+}
+
+.links-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
