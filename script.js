@@ -1,6 +1,6 @@
-const idrisId = document.getElementById('idris');
+const idrisIdd = document.getElementById('idris');
 
   // Add click event
-  idrisId.addEventListener('click', () => {
+  idrisIdd.addEventListener('click', () => {
     alert('https://github.com/Derainted');
   });
