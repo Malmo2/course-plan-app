@@ -14,14 +14,27 @@
 }
 
 .copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
 
+
+
+
+
+
+#anamaria {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
 
 .team-member {
     user-select: none;
