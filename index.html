@@ -2,311 +2,334 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="navbar-container">
-                <div class="logo">
-                    <p> Kursplan</p>
-                </div>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <p> Kursplan</p>
+        </div>
 
-                <ul class="navbar-links">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" data-translate="nav-home">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link" data-translate="nav-contactus">CONTACT US</a>
-                    </li>
-                </ul>
+        <ul class="navbar-links">
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-translate="nav-home">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-translate="nav-contactus">CONTACT US</a>
+          </li>
+        </ul>
 
-                <div class="nav-actions">
-                    <form class="search-form">
-                        <input class="search-input" type="search" name="q" placeholder="Search..."
-                            data-translate="search-placeholder" />
-                        <button class="search-btn" type="submit" aria-label="Search">
-                            <span>🔍</span>
-                        </button>
-                    </form>
+        <div class="nav-actions">
+          <form class="search-form">
+            <input class="search-input" type="search" name="q" placeholder="Search..."
+              data-translate="search-placeholder" />
+            <button class="search-btn" type="submit" aria-label="Search">
+              <span>🔍</span>
+            </button>
+          </form>
 
-                    <div class="language-toggle-wrapper">
-                        <button class="language-toggle" id="language-toggle" aria-label="Change language">
-                            <span class="language-option" data-lang="en">EN</span>
-                            <span class="language-option" data-lang="sv">SV</span>
-                            <span class="language-slider"></span>
-                        </button>
-                    </div>
+          <div class="language-toggle-wrapper">
+            <button class="language-toggle" id="language-toggle" aria-label="Change language">
+              <span class="language-option" data-lang="en">EN</span>
+              <span class="language-option" data-lang="sv">SV</span>
+              <span class="language-slider"></span>
+            </button>
+          </div>
 
-                    <button class="theme-toggle" id="theme-toggle" title="Toggle light & dark theme" aria-label="auto"
-                        aria-live="polite">
-                        <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
-                            <mask class="moon" id="moon-mask">
-                                <rect x="0" y="0" width="100%" height="100%" fill="white" />
-                                <circle cx="24" cy="10" r="6" fill="black" />
-                            </mask>
-                            <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
-                            <g class="sun-beams" stroke="currentColor">
-                                <line x1="12" y1="1" x2="12" y2="3" />
-                                <line x1="12" y1="21" x2="12" y2="23" />
-                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-                                <line x1="1" y1="12" x2="3" y2="12" />
-                                <line x1="21" y1="12" x2="23" y2="12" />
-                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-                            </g>
-                        </svg>
-                    </button>
+          <button class="theme-toggle" id="theme-toggle" title="Toggle light & dark theme" aria-label="auto"
+            aria-live="polite">
+            <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+              <mask class="moon" id="moon-mask">
+                <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                <circle cx="24" cy="10" r="6" fill="black" />
+              </mask>
+              <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+              <g class="sun-beams" stroke="currentColor">
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+              </g>
+            </svg>
+          </button>
 
-                    <button class="menu-toggle" aria-label="Toggle menu">
-                        <span class="hamburger"></span>
-                    </button>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-                 
-        <section class="hero">
-            <img src="./images/chas-academy-emblem.png" alt="Chas Academy Logo" class="hero-image">
-            <div class="hero-container">
-                <h1 class="hero-h1">Frontendutveckling</h1>
-                <a href="/images/2. Frontendutveckling 60 yhp.pdf" class="hero-btn">Läs mer</a>
-            </div>
-        </section>
-      
-      <h2 class="knowledge-title">Knowledge</h2>
-        <div class = "list-container">
-         <ul class="knowledge-list">
-            <li>
-                <div class = "li-header">1. Javascript principles
-                    <button class="dropdown-btn">Read more</button>
-                </div>
-                <div class="li-content">Describe how event handling in JavaScript is used to create interactive web applications.</div>
-            </li>
-            <li>
-                <div class = "li-header">2. API usage
-                    <button class="dropdown-btn">Read more</button>
-                </div>
-                <div class = "li-content">Explain how APIs are used to retrieve and manipulate data in web applications.</div>
-            </li>
-            <li>
-                <div class = "li-header">3. Developing principles
-                    <button class="dropdown-btn">Read more</button>
-                </div>
-                <div class = "li-content">Describe the principles of developing modular and reusable JavaScript components.</div>
-            </li>
-            <li> 
-                <div class = "li-header">4. WCAG standards
-                    <button class="dropdown-btn">Read more</button>
-                </div>
-                <div class = "li-content">Explain WCAG standards and how they are applied to create accessible interfaces.</div>
-            </li>
-            <li>
-                <div class = "li-header">5. UX & UI
-                    <button class="dropdown-btn">Read more</button>
-                </div>
-                <div class = "li-content">Describe UX and UI principles and how they are used to create user-friendly interfaces.</div>
-            </li>
-            <li>
-                <div class = "li-header">6. Security principles
-                    <button class="dropdown-btn">Read more</button>
-                </div>
-                <div class = "li-content">Explain basic security principles for protecting user data in web applications.</div>
-            </li>
-            <li>
-                <div class = "li-header">7. Front-end applications
-                    <button class="dropdown-btn">Read more</button>
-                </div>
-                <div class = "li-content">Explain the basics of testing front-end applications, including the use of testing tools such as Jest and Cypress for unit and end-to-end testing.</div>
-            </li>
-            <li>
-                <div class = "li-header">8. AI tools
-                    <button class="dropdown-btn">Read more</button>
-                </div>
-                <div class = "li-content">Explain how AI tools can be used to generate, analyze, and improve JavaScript code, including performance optimization and code smell identification. </div>
-            </li>
-            <li>
-                <div class = "li-header">9. Agile methodologies
-                    <button class="dropdown-btn">Read more</button>
-                </div>
-                <div class = "li-content"> Explain how agile methodologies, such as Scrum and Kanban, can be used to structure and streamline the front-end development process.</div>
-            </li>
-            <li>    
-                <div class = "li-header">10. Documentation
-                    <button class="dropdown-btn">Read more</button>
-                </div>
-                <div class = "li-content">Explain how documentation can be used to describe JavaScript functions, components, and API calls, and the importance of consistent structure in documentation.</div>
-            </li>
-        
-            </ul>
-            </div>
-       <!-- section 3 - Knowledge assesment -->
-       
-        <section class="section_3">
-            <h2> Knowledge assesment</h2>
-            <article class= "assesments">
-                <h3> Summative Assessment</h3>
-                <p>
-                    Summative assessment evaluates students’ knowledge and skills retrospectively, 
-                    summarizing what the student has achieved at the time of examination. 
-                    he summative assessment covers all course objectives and takes place at the following designated examination points:
-                </p>
-                <ul>
-                    <li>Written knowledge test – One (1) individual assessment of theoretical knowledge.</li>
-                    <li>Written reflection – One (1) individual report explaining personal solutions and approaches.</li>
-                    <li>Project submission – One (1) group submission in which each student’s individual contribution is assessed.</li>
-
-                </ul>
-
-            </article>
-            <article class= "assesments">
-                <h3> Formative assesments</h3>
-                <p>
-                    Formative assessment evaluates students’ knowledge and skills continuously during the interactive learning activities of the course.
-                     The purpose is to make assessment more efficient while supporting the learning process. Formative assessment takes place during:
-                </p>
-                <ul>
-                    <li>Workshops – Interactive teaching sessions where the class and instructor practice together.</li>
-                    <li>Checkpoints – Regular review sessions where students present their projects and receive immediate feedback.</li>
-                </ul>
-                <p>
-                    Formative assessment complements summative assessment and is always applied in favor of the student. 
-                    Students may achieve course objectives prior to the summative examinations through formative assessment,
-                     but a failing grade can never be based solely on this form of assessment.
-                </p>
-
-            </article>
-        </section>
-      
-    </main>
-
-
-<footer class="course-center-footer">
-  <div class="footer-main">
-    <div class="footer-logo-contact">
-      <div class="footer-logo">
-        <span class="logo-text">COURSE <br> PLAN</span>
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <span class="hamburger"></span>
+          </button>
+        </div>
       </div>
-
-      <address>
-        random address<br>
-        Stockholm, Sweden<br>
-        Phone: <a href="tel:+46123456789">+46 123 456 789</a><br>
-        <a href="mailto:info@yourdomain.com">MAIL</a>
-      </address>
-
-      <div class="footer-social">
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-      </div>
-    </div>
-
-    <nav class="footer-links" aria-label="Footer">
-      <ul>
-        <li><strong>EXPLORE</strong></li>
-        <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-        <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-        <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-        <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-      </ul>
-
-      <ul>
-        <li><strong>EXPLORE</strong></li>
-        <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-        <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-        <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-        <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-      </ul>
     </nav>
-  </div>
+  </header>
 
-  <div class="footer-team-wrapper">
-    <button class="team-nav team-nav-left" aria-label="Previous Team member">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-           xmlns="http://www.w3.org/2000/svg">
-        <path d="M15 18L9 12L15 6"
-              stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </button>
+  <main>
 
-    <div class="footer-team">
-      <div class="team-track">
-        <div class="team-slide">
-          <img src="./images/anamariaprofil.jpg" alt="Ana Maria" />
-          <div class="member-meta">
-            <div class="member-name">Ana Maria</div>
-            <a class="member-github" href="https://github.com/anamaria" target="_blank" rel="noopener">github.com/anamaria</a>
+    <section class="hero">
+      <img src="./images/chas-academy-emblem.png" alt="Chas Academy Logo" class="hero-image">
+      <div class="hero-container">
+        <h1 class="hero-h1">Frontendutveckling</h1>
+        <a href="/images/2. Frontendutveckling 60 yhp.pdf" class="hero-btn">Läs mer</a>
+      </div>
+    </section>
+
+    <!---About Section-->
+    <section class="about">
+      <div class="about-container">
+        <h2 class="section-title">About Us</h2>
+        <p class="section-text">
+          Our mission is to provide learning resources and assessments in programming with a focus on JavaScript.
+        </p>
+      </div>
+    </section>
+
+    <h2 class="knowledge-title">Knowledge</h2>
+    <div class="list-container">
+      <ul class="knowledge-list">
+        <li>
+          <div class="li-header">1. Javascript principles
+            <button class="dropdown-btn">Read more</button>
           </div>
+          <div class="li-content">Describe how event handling in JavaScript is used to create interactive web
+            applications.</div>
+        </li>
+        <li>
+          <div class="li-header">2. API usage
+            <button class="dropdown-btn">Read more</button>
+          </div>
+          <div class="li-content">Explain how APIs are used to retrieve and manipulate data in web applications.</div>
+        </li>
+        <li>
+          <div class="li-header">3. Developing principles
+            <button class="dropdown-btn">Read more</button>
+          </div>
+          <div class="li-content">Describe the principles of developing modular and reusable JavaScript components.
+          </div>
+        </li>
+        <li>
+          <div class="li-header">4. WCAG standards
+            <button class="dropdown-btn">Read more</button>
+          </div>
+          <div class="li-content">Explain WCAG standards and how they are applied to create accessible interfaces.</div>
+        </li>
+        <li>
+          <div class="li-header">5. UX & UI
+            <button class="dropdown-btn">Read more</button>
+          </div>
+          <div class="li-content">Describe UX and UI principles and how they are used to create user-friendly
+            interfaces.</div>
+        </li>
+        <li>
+          <div class="li-header">6. Security principles
+            <button class="dropdown-btn">Read more</button>
+          </div>
+          <div class="li-content">Explain basic security principles for protecting user data in web applications.</div>
+        </li>
+        <li>
+          <div class="li-header">7. Front-end applications
+            <button class="dropdown-btn">Read more</button>
+          </div>
+          <div class="li-content">Explain the basics of testing front-end applications, including the use of testing
+            tools such as Jest and Cypress for unit and end-to-end testing.</div>
+        </li>
+        <li>
+          <div class="li-header">8. AI tools
+            <button class="dropdown-btn">Read more</button>
+          </div>
+          <div class="li-content">Explain how AI tools can be used to generate, analyze, and improve JavaScript code,
+            including performance optimization and code smell identification. </div>
+        </li>
+        <li>
+          <div class="li-header">9. Agile methodologies
+            <button class="dropdown-btn">Read more</button>
+          </div>
+          <div class="li-content"> Explain how agile methodologies, such as Scrum and Kanban, can be used to structure
+            and streamline the front-end development process.</div>
+        </li>
+        <li>
+          <div class="li-header">10. Documentation
+            <button class="dropdown-btn">Read more</button>
+          </div>
+          <div class="li-content">Explain how documentation can be used to describe JavaScript functions, components,
+            and API calls, and the importance of consistent structure in documentation.</div>
+        </li>
+
+      </ul>
+    </div>
+    <!-- section 3 - Knowledge assesment -->
+
+    <section class="section_3">
+      <h2> Knowledge assesment</h2>
+      <article class="assesments">
+        <h3> Summative Assessment</h3>
+        <p>
+          Summative assessment evaluates students’ knowledge and skills retrospectively,
+          summarizing what the student has achieved at the time of examination.
+          he summative assessment covers all course objectives and takes place at the following designated examination
+          points:
+        </p>
+        <ul>
+          <li>Written knowledge test – One (1) individual assessment of theoretical knowledge.</li>
+          <li>Written reflection – One (1) individual report explaining personal solutions and approaches.</li>
+          <li>Project submission – One (1) group submission in which each student’s individual contribution is assessed.
+          </li>
+
+        </ul>
+
+      </article>
+      <article class="assesments">
+        <h3> Formative assesments</h3>
+        <p>
+          Formative assessment evaluates students’ knowledge and skills continuously during the interactive learning
+          activities of the course.
+          The purpose is to make assessment more efficient while supporting the learning process. Formative assessment
+          takes place during:
+        </p>
+        <ul>
+          <li>Workshops – Interactive teaching sessions where the class and instructor practice together.</li>
+          <li>Checkpoints – Regular review sessions where students present their projects and receive immediate
+            feedback.</li>
+        </ul>
+        <p>
+          Formative assessment complements summative assessment and is always applied in favor of the student.
+          Students may achieve course objectives prior to the summative examinations through formative assessment,
+          but a failing grade can never be based solely on this form of assessment.
+        </p>
+
+      </article>
+    </section>
+
+  </main>
+
+
+  <footer class="course-center-footer">
+    <div class="footer-main">
+      <div class="footer-logo-contact">
+        <div class="footer-logo">
+          <span class="logo-text">COURSE <br> PLAN</span>
         </div>
 
-        <div class="team-slide">
-          <img src="./images/benjame.webp" alt="Benjame" />
-          <div class="member-meta">
-            <div class="member-name">Benjame</div>
-            <a class="member-github" href="https://github.com/benjame" target="_blank" rel="noopener">github.com/benjame</a>
-          </div>
-        </div>
+        <address>
+          random address<br>
+          Stockholm, Sweden<br>
+          Phone: <a href="tel:+46123456789">+46 123 456 789</a><br>
+          <a href="mailto:info@yourdomain.com">MAIL</a>
+        </address>
 
-        <div class="team-slide">
-          <img src="./images/emelie-bild.jpg" alt="Emelie" />
-          <div class="member-meta">
-            <div class="member-name">Emelie</div>
-            <a class="member-github" href="https://github.com/emelie" target="_blank" rel="noopener">github.com/emelie</a>
-          </div>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
         </div>
+      </div>
 
-        <div class="team-slide">
-          <img src="./images/alg.jpg" alt="Mattias" />
-          <div class="member-meta">
-            <div class="member-name">Mattias</div>
-            <a class="member-github" href="https://github.com/mattias" target="_blank" rel="noopener">github.com/mattias</a>
+      <nav class="footer-links" aria-label="Footer">
+        <ul>
+          <li><strong>EXPLORE</strong></li>
+          <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+          <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+          <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+          <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+        </ul>
+
+        <ul>
+          <li><strong>EXPLORE</strong></li>
+          <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+          <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+          <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+          <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-team-wrapper">
+      <button class="team-nav team-nav-left" aria-label="Previous Team member">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+
+      <div class="footer-team">
+        <div class="team-track">
+          <div class="team-slide">
+            <img src="./images/anamariaprofil.jpg" alt="Ana Maria" />
+            <div class="member-meta">
+              <div class="member-name">Ana Maria</div>
+              <a class="member-github" href="https://github.com/anamaria" target="_blank"
+                rel="noopener">github.com/anamaria</a>
+            </div>
           </div>
-        </div>
 
-        <div class="team-slide">
-          <img src="./images/screenshot-id.png" alt="Idris" />
-          <div class="member-meta">
-            <div class="member-name">Idris</div>
-            <a class="member-github" href="https://github.com/idris" target="_blank" rel="noopener">github.com/idris</a>
+          <div class="team-slide">
+            <img src="./images/benjame.webp" alt="Benjame" />
+            <div class="member-meta">
+              <div class="member-name">Benjame</div>
+              <a class="member-github" href="https://github.com/benjame" target="_blank"
+                rel="noopener">github.com/benjame</a>
+            </div>
+          </div>
+
+          <div class="team-slide">
+            <img src="./images/emelie-bild.jpg" alt="Emelie" />
+            <div class="member-meta">
+              <div class="member-name">Emelie</div>
+              <a class="member-github" href="https://github.com/emelie" target="_blank"
+                rel="noopener">github.com/emelie</a>
+            </div>
+          </div>
+
+          <div class="team-slide">
+            <img src="./images/alg.jpg" alt="Mattias" />
+            <div class="member-meta">
+              <div class="member-name">Mattias</div>
+              <a class="member-github" href="https://github.com/mattias" target="_blank"
+                rel="noopener">github.com/mattias</a>
+            </div>
+          </div>
+
+          <div class="team-slide">
+            <img src="./images/screenshot-id.png" alt="Idris" />
+            <div class="member-meta">
+              <div class="member-name">Idris</div>
+              <a class="member-github" href="https://github.com/idris" target="_blank"
+                rel="noopener">github.com/idris</a>
+            </div>
           </div>
         </div>
       </div>
+
+      <button class="team-nav team-nav-right" aria-label="Next Team member">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
     </div>
 
-    <button class="team-nav team-nav-right" aria-label="Next Team member">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-           xmlns="http://www.w3.org/2000/svg">
-        <path d="M9 18L15 12L9 6"
-              stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </button>
-  </div>
-
-  <div class="footer-bar">
-    <span>&copy; 2025 Your Company Name. All rights reserved.</span>
-  </div>
-</footer>
+    <div class="footer-bar">
+      <span>&copy; 2025 Your Company Name. All rights reserved.</span>
+    </div>
+  </footer>
 
 
 
 
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 
-    <script src="carousel.js"></script>
+  <script src="carousel.js"></script>
 
 
 
@@ -314,18 +337,17 @@
 
 
 
-    <script src="darkmode.js"></script>
-    <script src="translate.js"></script>
+  <script src="darkmode.js"></script>
+  <script src="translate.js"></script>
 
-    <script src="anamaria.js"></script>
-    <script src="johannes.js"></script>
-    <script src="mattias.js"></script>
-    <script src="benjame.js"></script>
-    <script src="emelie.js"></script>
-    <script src="idris.js"></script>
+  <script src="anamaria.js"></script>
+  <script src="johannes.js"></script>
+  <script src="mattias.js"></script>
+  <script src="benjame.js"></script>
+  <script src="emelie.js"></script>
+  <script src="idris.js"></script>
 
 
 </body>
 
 </html>
-
