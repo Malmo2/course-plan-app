@@ -1,3 +1,4 @@
+
 const listItems = document.querySelectorAll('.knowledge-list li');
 const buttons = document.querySelectorAll('.dropdown-btn');
 
@@ -14,3 +15,7 @@ buttons.forEach(btn => {
     li.classList.toggle('active');
   });
 });
+
+
+
+
