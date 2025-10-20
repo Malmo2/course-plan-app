@@ -1,110 +1,21 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-}
+const listItems = document.querySelectorAll('.knowledge-list li');
+const buttons = document.querySelectorAll('.dropdown-btn');
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
-}
+listItems.forEach(li => {
+  li.querySelector('.li-header').addEventListener('click', () => {
+    li.classList.toggle('active');
+  });
+});
 
-/* About Section - Mobile First */
-.about {
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 20px;
-  text-align: center;
-}
+buttons.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation(); 
+    const li = btn.closest('li');
+    li.classList.toggle('active');
+  });
+});
 
-.about-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
-.section-title {
-  font-family: 'Roboto', sans-serif;
-  color: #000000;
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 30px;
-  letter-spacing: -1px;
-  animation: fadeInUp 0.8s ease-out;
-}
-
-.section-text {
-  font-family: 'Poppins', sans-serif;
-  color: #808080;
-  font-size: 1.25rem;
-  font-weight: 300;
-  line-height: 1.6;
-  max-width: 1100px;
-  margin: 0 auto;
-  animation: fadeInUp 1s ease-out 0.2s both;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Tablet and up */
-@media (min-width: 600px) {
-  .about {
-    padding: 60px 30px;
-  }
-  
-  .section-title {
-    font-size: 4rem;
-    margin-bottom: 40px;
-  }
-  
-  .section-text {
-    font-size: 1.5rem;
-  }
-}
-
-/* Desktop and up */
-@media (min-width: 900px) {
-  .about {
-    min-height: 100vh;
-    padding: 80px 40px;
-  }
-  
-  .section-title {
-    font-size: 5rem;
-    margin-bottom: 50px;
-    letter-spacing: -2px;
-  }
-  
-  .section-text {
-    font-size: 2rem;
-  }
-}
-
-/* Large Desktop */
-@media (min-width: 1200px) {
-  .section-title {
-    font-size: 6rem;
-    margin-bottom: 60px;
-  }
-  
-  .section-text {
-    font-size: 2.5rem;
-  }
-}
 
 

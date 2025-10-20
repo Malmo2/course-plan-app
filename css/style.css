@@ -140,6 +140,37 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.list-container {
+    width: 100%;
+}
+
+.knowledge-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px; 
+}
+
+.knowledge-list li {
+  flex: 0 0 19%;
+  box-sizing: border-box;
+  background: #eee;
+  padding: 10px;
+  text-align: left;
+
+}
+.li-content {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.li.active .li-content {
+    max-height: 200px;
+    padding: 10px;
+}
+
 .team-container {
   display: flex;
   align-items: center;
