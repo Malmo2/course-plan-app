@@ -355,82 +355,217 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(0);
 }
 
-.team {
-  display: flex;
-}
 
-.links-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#anamaria {
-  width: 80px;
-  height: 80px;
+.team-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: 2px solid #000;
   border-radius: 50%;
-  object-fit: cover;
-}
-
-.team-member {
-  user-select: none;
-  list-style: none;
-}
-
-.footer-avatar {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: 10px;
-  cursor: pointer;
-  user-select: none;
-}
-
-#johannes {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: 10px;
-  cursor: pointer;
-}
-
-#mattias {
-  border-radius: 50%;
-  border: 3px solid gold;
-  width: 70px;
-  height: 70px;
-  object-fit: cover;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-}
-
-#benjame {
   width: 50px;
   height: 50px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  color: #000;
+  transition: background-color 0.3s, color 0.3s;
+  z-index: 10;
 }
 
-#idris {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  cursor: pointer;
+.team-nav:hover {
+  background: #000;
+  color: #fff;
 }
 
-#emelie {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  cursor: pointer;
+.team-nav-left {
+  left: 10px;
 }
+
+.team-nav-right {
+  right: 10px;
+}
+
+.team-nav svg {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+.course-center-footer {
+  background: #fff;
+  color: #000;
+  font-family: 'Roboto', 'Poppins', sans-serif;
+  padding: 50px 0 0 0;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 80px 50px 80px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-logo-contact {
+  flex: 1 1 280px;
+  min-width: 260px;
+}
+
+.footer-logo .logo-text {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 0px;
+  margin-bottom: 25px;
+  line-height: 1.1;
+}
+
+.footer-logo-contact address {
+  color: #000;
+  font-style: normal;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.footer-logo-contact address a {
+  color: #000;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.footer-logo-contact address a:hover {
+  opacity: 0.7;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.footer-social a {
+  color: #000;
+  font-size: 1.2rem;
+  transition: opacity 0.3s;
+}
+
+.footer-social a:hover {
+  opacity: 0.7;
+}
+
+.footer-links {
+  display: flex;
+  flex: 2 1 460px;
+  min-width: 320px;
+  gap: 80px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #000;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.footer-links a:hover {
+  opacity: 0.7;
+}
+
+.footer-team-wrapper {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 80px;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.footer-team {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.team-track {
+  display: flex;
+  gap: 60px;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.team-slide {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+}
+
+.team-slide img {
+  height: 60px;
+  width: 60px;
+  max-width: 200px;
+  object-fit: cover;
+  border-radius: 999px;
+  border-color: #000;
+}
+
+.member-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.member-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.member-github {
+  font-size: 0.9rem;
+  color: #000;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(2px);
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.team-slide:hover .member-github {
+  opacity: 1;
+  transform: translateY(0);
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .team-slide {
+    width: calc((100% - 60px) / 2);
+  }
+}
+
+@media (max-width: 600px) {
+  .team-slide {
+    width: 100%;
+  }
+
+
 
 @media (max-width: 768px) {
   .hero-container {
