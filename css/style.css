@@ -1,4 +1,168 @@
+/* Dark Mode Variables */
+.dark-mode {
+  --white: #0b0b0e;
+  --black: #f3f4f6;
+  --darker-gray: var(--black);
+  --gray: var(--black);
+  --btn-primary-color: var(--black);
+}
 
+/* Navigation Styles */
+.navbar {
+  width: 100%;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode .navbar {
+  background: #0a0a0a;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 2rem;
+}
+
+.logo {
+  flex-shrink: 0;
+  font-size: 1.2rem;
+}
+
+/* Navigation Actions */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 1001;
+}
+
+/* Language Toggle with Slider */
+.language-toggle-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.language-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  padding: 0.35rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  min-width: 80px;
+}
+
+.language-toggle:hover {
+  box-shadow: 0 4px 12px rgba(21, 57, 100, 0.3);
+}
+
+.dark-mode .language-toggle {
+  background: transparent;
+}
+
+.dark-mode .language-toggle:hover {
+  box-shadow: 0 4px 12px rgba(21, 57, 100, 0.3);
+}
+
+/* Language Options */
+.language-option {
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  padding: 0.35rem 0.6rem;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+  color: #153964;
+  flex: 1;
+  text-align: center;
+}
+
+.dark-mode .language-option {
+  color: #153964;
+}
+
+.language-option.active {
+  color: #fff;
+}
+
+.dark-mode .language-option.active {
+  color: #fff;
+}
+
+/* Navigation Links */
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #337bd4;
+}
+
+.dark-mode .nav-link {
+  color: #fff;
+}
+
+.dark-mode .nav-link:hover {
+  color: #8ab4e6;
+}
+
+/* Theme Toggle Button - Placeholder styling */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+.sun-and-moon {
+  color: #333;
+}
+
+.dark-mode .sun-and-moon {
+  color: #fff;
+}
 
 .team-container {
   display: flex;
