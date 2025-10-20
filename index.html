@@ -10,14 +10,75 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <p> Kursplan</p>
+                </div>
 
+                <ul class="navbar-links">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-translate="nav-home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-translate="nav-contactus">CONTACT US</a>
+                    </li>
+                </ul>
+
+                <div class="nav-actions">
+                    <form class="search-form">
+                        <input class="search-input" type="search" name="q" placeholder="Search..."
+                            data-translate="search-placeholder" />
+                        <button class="search-btn" type="submit" aria-label="Search">
+                            <span>🔍</span>
+                        </button>
+                    </form>
+
+                    <div class="language-toggle-wrapper">
+                        <button class="language-toggle" id="language-toggle" aria-label="Change language">
+                            <span class="language-option" data-lang="en">EN</span>
+                            <span class="language-option" data-lang="sv">SV</span>
+                            <span class="language-slider"></span>
+                        </button>
+                    </div>
+
+                    <button class="theme-toggle" id="theme-toggle" title="Toggle light & dark theme" aria-label="auto"
+                        aria-live="polite">
+                        <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                            <mask class="moon" id="moon-mask">
+                                <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                                <circle cx="24" cy="10" r="6" fill="black" />
+                            </mask>
+                            <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+                            <g class="sun-beams" stroke="currentColor">
+                                <line x1="12" y1="1" x2="12" y2="3" />
+                                <line x1="12" y1="21" x2="12" y2="23" />
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                                <line x1="1" y1="12" x2="3" y2="12" />
+                                <line x1="21" y1="12" x2="23" y2="12" />
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                            </g>
+                        </svg>
+                    </button>
+
+                    <button class="menu-toggle" aria-label="Toggle menu">
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-    
-
+        <section class="hero">
+            <img src="./images/chas-academy-emblem.png" alt="Chas Academy Logo" class="hero-image">
+            <div class="hero-container">
+                <h1 class="hero-h1">Frontendutveckling</h1>
+                <a href="/images/2. Frontendutveckling 60 yhp.pdf" class="hero-btn">Läs mer</a>
+            </div>
+        </section>
     </main>
 
     <!---About Section-->
@@ -86,23 +147,15 @@
     </footer>
 
 
-    <script src="johannes.js"></script>
     <script src="script.js"></script>
-
-
-
-
-
-
-
+    <script src="darkmode.js"></script>
+    <script src="translate.js"></script>
 
     <script src="anamaria.js"></script>
-
+    <script src="johannes.js"></script>
     <script src="mattias.js"></script>
-
     <script src="benjame.js"></script>
     <script src="emelie.js"></script>
-
     <script src="idris.js"></script>
 
 
