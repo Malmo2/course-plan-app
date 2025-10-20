@@ -16,7 +16,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* About Section - Mobile First */
 .about {
-  background: #fff;
   min-height: 80vh;
   display: flex;
   align-items: center;
@@ -32,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-title {
   font-family: 'Roboto', sans-serif;
-  color: #000;
+  color: #000000;
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 30px;
@@ -42,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-text {
   font-family: 'Poppins', sans-serif;
-  color: #555;
+  color: #808080;
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 1.6;
@@ -108,100 +107,4 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.team-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.team {
-  display: flex;
-}
-
-.links-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.copyright {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-
-
-
-
-
-
-#anamaria {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-
-}
-
-.team-member {
-    user-select: none;
-    list-style: none;
-}
-
-.footer-avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 10px;
-    cursor: pointer;
-    user-select: none;
-}
-
-
-#johannes {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 10px;
-    cursor: pointer;
-}
-
-
-
-#mattias {
-    border-radius: 50%;
-    border: 3px solid gold;
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-}
-
-
-#benjame {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 5px;
-    cursor: pointer;
-}
-
-#idris {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-#emelie {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  cursor: pointer;
-}
 
