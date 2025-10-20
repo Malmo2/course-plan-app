@@ -3,6 +3,14 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
 /* Dark Mode Variables */
 .dark-mode {
   --white: #0b0b0e;
@@ -33,14 +41,6 @@ html {
   max-width: 1400px;
   margin: 0 auto;
 }
-
-* {
-  font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
@@ -387,6 +387,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.section_3 {
+  
+}
+
+
 .team-nav {
   position: absolute;
   top: 50%;
@@ -497,6 +502,7 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 320px;
   gap: 80px;
 }
+
 
 .footer-links ul {
   list-style: none;
@@ -627,3 +633,4 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9375rem;
   }
 }
+
