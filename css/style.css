@@ -1,8 +1,5 @@
 .list-container {
     width: 100%;
-
-
-    
 }
 
 .knowledge-list {
@@ -11,8 +8,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 10px;
-    
+    gap: 10px; 
 }
 
 .knowledge-list li {
@@ -22,5 +18,14 @@
   padding: 10px;
   text-align: left;
 
+}
+.li-content {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.li.active .li-content {
+    max-height: 200px;
+    padding: 10px;
 }
 
