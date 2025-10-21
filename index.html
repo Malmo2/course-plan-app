@@ -27,136 +27,51 @@
           </li>
         </ul>
 
-    <main>
-            
-        <h2 class="knowledge-title">Knowledge</h2>
-        <div class = "list-container">
-         <ul class="knowledge-list">
-            <li>
-                <div class = "li-header">1. Javascript principles
-                    <button class="dropdown-btn">Read more</button>
-                </div>
-                <div class="li-content">Describe how event handling in JavaScript is used to create interactive web applications.
-                    <button class="close-btn">✖</button>
-                </div>
-            </li>
-            <li>
-                <div class = "li-header">2. API usage
-                    <button class="dropdown-btn">Read more</button>
-                </div>
-                <div class = "li-content">Explain how APIs are used to retrieve and manipulate data in web applications.
-                    <button class="close-btn">✖</button>
-                </div>
-            </li>
-            <li>
-                <div class = "li-header">3. Developing principles
-                    <button class="dropdown-btn">Read more</button>
-                </div>
-                <div class = "li-content">Describe the principles of developing modular and reusable JavaScript components.
-                    <button class="close-btn">✖</button>
-                </div>
-            </li>
-            <li> 
-                <div class = "li-header">4. WCAG standards
-                    <button class="dropdown-btn">Read more</button>
-                </div>
-                <div class = "li-content">Explain WCAG standards and how they are applied to create accessible interfaces.
-                    <button class="close-btn">✖</button>
-                </div>
-            </li>
-            <li>
-                <div class = "li-header">5. UX & UI
-                    <button class="dropdown-btn">Read more</button>
-                </div>
-                <div class = "li-content">Describe UX and UI principles and how they are used to create user-friendly interfaces.
-                    <button class="close-btn">✖</button>
-                </div>
-            </li>
-            <li>
-                <div class = "li-header">6. Security principles
-                    <button class="dropdown-btn">Read more</button>
-                </div>
-                <div class = "li-content">Explain basic security principles for protecting user data in web applications.
-                    <button class="close-btn">✖</button>
-                </div>
-            </li>
-            <li>
-                <div class = "li-header">7. Front-end applications
-                    <button class="dropdown-btn">Read more</button>
-                </div>
-                <div class = "li-content">Explain the basics of testing front-end applications, including the use of testing tools such as Jest and Cypress for unit and end-to-end testing.
-                    <button class="close-btn">✖</button>
-                </div>
-            </li>
-            <li>
-                <div class = "li-header">8. AI tools
-                    <button class="dropdown-btn">Read more</button>
-                </div>
-                <div class = "li-content">Explain how AI tools can be used to generate, analyze, and improve JavaScript code, including performance optimization and code smell identification. 
-                    <button class="close-btn">✖</button>
-                </div>
-            </li>
-            <li>
-                <div class = "li-header">9. Agile methodologies
-                    <button class="dropdown-btn">Read more</button>
-                </div>
-                <div class = "li-content"> Explain how agile methodologies, such as Scrum and Kanban, can be used to structure and streamline the front-end development process.
-                    <button class="close-btn">✖</button>
-                </div>
-            </li>
-            <li>    
-                <div class = "li-header">10. Documentation
-                    <button class="dropdown-btn">Read more</button>
-                </div>
-                <div class = "li-content">Explain how documentation can be used to describe JavaScript functions, components, and API calls, and the importance of consistent structure in documentation.
-                    <button class="close-btn">✖</button>
-                </div>
-            </li>
-        
-            </ul>
+        <main>
 
-        <div class="nav-actions">
-          <form class="search-form">
-            <input class="search-input" type="search" name="q" placeholder="Search..."
-              data-translate="search-placeholder" />
-            <button class="search-btn" type="submit" aria-label="Search">
-              <span>🔍</span>
+
+          <div class="nav-actions">
+            <form class="search-form">
+              <input class="search-input" type="search" name="q" placeholder="Search..."
+                data-translate="search-placeholder" />
+              <button class="search-btn" type="submit" aria-label="Search">
+                <span>🔍</span>
+              </button>
+            </form>
+
+            <div class="language-toggle-wrapper">
+              <button class="language-toggle" id="language-toggle" aria-label="Change language">
+                <span class="language-option" data-lang="en">EN</span>
+                <span class="language-option" data-lang="sv">SV</span>
+                <span class="language-slider"></span>
+              </button>
+            </div>
+
+            <button class="theme-toggle" id="theme-toggle" title="Toggle light & dark theme" aria-label="auto"
+              aria-live="polite">
+              <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                <mask class="moon" id="moon-mask">
+                  <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                  <circle cx="24" cy="10" r="6" fill="black" />
+                </mask>
+                <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+                <g class="sun-beams" stroke="currentColor">
+                  <line x1="12" y1="1" x2="12" y2="3" />
+                  <line x1="12" y1="21" x2="12" y2="23" />
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                  <line x1="1" y1="12" x2="3" y2="12" />
+                  <line x1="21" y1="12" x2="23" y2="12" />
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                </g>
+              </svg>
             </button>
-          </form>
 
-          <div class="language-toggle-wrapper">
-            <button class="language-toggle" id="language-toggle" aria-label="Change language">
-              <span class="language-option" data-lang="en">EN</span>
-              <span class="language-option" data-lang="sv">SV</span>
-              <span class="language-slider"></span>
+            <button class="menu-toggle" aria-label="Toggle menu">
+              <span class="hamburger"></span>
             </button>
           </div>
-
-          <button class="theme-toggle" id="theme-toggle" title="Toggle light & dark theme" aria-label="auto"
-            aria-live="polite">
-            <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
-              <mask class="moon" id="moon-mask">
-                <rect x="0" y="0" width="100%" height="100%" fill="white" />
-                <circle cx="24" cy="10" r="6" fill="black" />
-              </mask>
-              <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
-              <g class="sun-beams" stroke="currentColor">
-                <line x1="12" y1="1" x2="12" y2="3" />
-                <line x1="12" y1="21" x2="12" y2="23" />
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-                <line x1="1" y1="12" x2="3" y2="12" />
-                <line x1="21" y1="12" x2="23" y2="12" />
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-              </g>
-            </svg>
-          </button>
-
-          <button class="menu-toggle" aria-label="Toggle menu">
-            <span class="hamburger"></span>
-          </button>
-        </div>
       </div>
     </nav>
   </header>
