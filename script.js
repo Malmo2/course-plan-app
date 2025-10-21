@@ -14,6 +14,6 @@ closeButtons.forEach(btn => {
 e.stopPropagation();
 const li = btn.closest('li');
 li.classList.toggle('active');
-li.classList.remove();
-  });
-});
+li.classList.remove()
+  })
+})
