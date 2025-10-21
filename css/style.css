@@ -19,13 +19,22 @@
   text-align: left;
 
 }
+
+
 .li-content {
     max-height: 0;
     overflow: hidden;
+    padding: 0 10px; 
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    display: flex; 
+    flex-direction: column;
 }
 
-.li.active .li-content {
-    max-height: 200px;
+.knowledge-list li.active .li-content {
+    max-height: 1000px;
     padding: 10px;
 }
+
+
+
 
