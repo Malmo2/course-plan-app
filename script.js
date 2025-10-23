@@ -4,6 +4,9 @@ buttons.forEach(btn => {
   btn.addEventListener('click', (e) => {
     e.stopPropagation();
     const li = btn.closest('li');
+    document.querySelectorAll('.knowledge-list li.active').forEach(openLi => {
+      if (openLi !== li) openLi.classList.remove('active');
+    });
     li.classList.toggle('active');
   });
 });
@@ -11,8 +14,7 @@ closeButtons.forEach(btn => {
   btn.addEventListener('click', (e) => {
     e.stopPropagation();
     const li = btn.closest('li');
-    li.classList.toggle('active');
-    li.classList.remove()
+    li.classList.remove('active');
   })
 })
 const tocItems = document.querySelectorAll('.toc-item');
