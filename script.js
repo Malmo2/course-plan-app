@@ -21,15 +21,29 @@ const tocItems = document.querySelectorAll('.toc-item');
 const knowledgeItems = document.querySelectorAll('.knowledge-list li');
 tocItems.forEach(item => {
   const id = item.dataset.id;
+
+const tocItems = document.querySelectorAll('.toc-item');
+const knowledgeItems = document.querySelectorAll('.knowledge-list li');
+
+tocItems.forEach(item => {
+  const id = item.dataset.id;
+
+
   item.addEventListener('mouseenter', () => {
     const match = document.querySelector(`.knowledge-list li[data-id="${id}"]`);
     if (match) match.classList.add('highlight');
   });
+
+
   item.addEventListener('mouseleave', () => {
     const match = document.querySelector(`.knowledge-list li[data-id="${id}"]`);
     if (match) match.classList.remove('highlight');
     match.classList.remove('highlight');
+
+  
   });
+
+
   item.addEventListener('click', () => {
     const match = document.querySelector(`.knowledge-list li[data-id="${id}"]`);
     if (match) {
@@ -37,4 +51,9 @@ tocItems.forEach(item => {
       setTimeout(() => match.classList.remove('highlight'), 2000);
     }
   });
+
 });
+
+});
+
+
