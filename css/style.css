@@ -144,6 +144,15 @@ h6 {
     font-size: 2.5rem;
   }
 }
+.dropdown-btn {
+  float: right;
+  background-color: transparent;
+  border: none;
+  color: #007BFF;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 
 .dropdown-btn {
   float: right;
@@ -163,6 +172,15 @@ h6 {
   margin-bottom: 200px;
 }
 
+.knowledge-title {
+  font-size: 1.5em;
+  margin-bottom: 500px;
+  text-align: center;
+  padding-top: 10px;
+  transform: scale(1.5);
+  margin-bottom: 200px;
+}
+
 .container {
   display: flex;
   gap: 40px;
@@ -171,6 +189,7 @@ h6 {
   justify-content: center;
   transform: scale(1.5);
   margin-bottom: 900px;
+
 }
 
 .page-layout {
@@ -210,7 +229,53 @@ h6 {
   background-color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
+
 }
+.page-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;              
+  padding: 20px;
+}
+
+
+.layout {
+  min-width: 200px;             
+  font-size: 1.2em;
+  border: 3px solid black;      
+  padding: 10px 15px;           
+  background-color: #f9f9f9;    
+  box-sizing: border-box;
+}
+
+.layout ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.layout li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  user-select: none;
+  outline: none;
+}
+
+
+
+.layout li:last-child {
+  border-bottom: none;
+}
+
+
+.layout li:hover {
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
 
 .knowledge-list {
   display: grid;
@@ -232,11 +297,15 @@ h6 {
 }
 
 .li-header {
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
 }
+
+
+ 
 
 .li-content {
   max-height: 0;
@@ -246,10 +315,23 @@ h6 {
   transition: max-height 0.3s ease, padding-top 0.3s ease, padding-bottom 0.3s ease;
 }
 
+
 .knowledge-list li.active .li-content {
   max-height: 1000px;
   padding-top: 10px;
   padding-bottom: 10px;
+
+}
+.knowledge-list li.highlight {
+  border-color: #007BFF; 
+  background-color: #f0f8ff; 
+  transition: all 0.2s ease;
+}
+
+.knowledge-list li.active {
+  border-color: #007BFF;
+  background-color: #f0f8ff; 
+  transition: all 0.2s ease;
 }
 
 .knowledge-list li.highlight {
