@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,9 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+
 </head>
+
 
 <body>
   <header>
@@ -17,6 +20,7 @@
         <div class="logo">
           <p> Kursplan</p>
         </div>
+
 
         <ul class="navbar-links">
           <li class="nav-item">
@@ -27,7 +31,10 @@
           </li>
         </ul>
 
+
         <main>
+
+
 
 
           <div class="nav-actions">
@@ -39,6 +46,7 @@
               </button>
             </form>
 
+
             <div class="language-toggle-wrapper">
               <button class="language-toggle" id="language-toggle" aria-label="Change language">
                 <span class="language-option" data-lang="en">EN</span>
@@ -46,6 +54,7 @@
                 <span class="language-slider"></span>
               </button>
             </div>
+
 
             <button class="theme-toggle" id="theme-toggle" title="Toggle light & dark theme" aria-label="auto"
               aria-live="polite">
@@ -68,6 +77,7 @@
               </svg>
             </button>
 
+
             <button class="menu-toggle" aria-label="Toggle menu">
               <span class="hamburger"></span>
             </button>
@@ -76,7 +86,9 @@
     </nav>
   </header>
 
+
   <main>
+
 
     <section class="hero">
       <img src="./images/chas-academy-emblem.png" alt="Chas Academy Logo" class="hero-image">
@@ -85,6 +97,7 @@
         <a href="/images/2. Frontendutveckling 60 yhp.pdf" class="hero-btn">Läs mer</a>
       </div>
     </section>
+
 
     <!---About Section-->
     <section class="about">
@@ -96,92 +109,101 @@
       </div>
     </section>
 
-    
 
-  <div class="layout">
-  <ul>
-    <li class="toc-item" data-id="1">1. Javascript Events</li>
-    <li class="toc-item" data-id="2">2. API integration</li>
-    <li class="toc-item" data-id="3">3. Developing principles</li>
-    <li class="toc-item" data-id="4">4. WCAG standards</li>
-    <li class="toc-item" data-id="5">5. UX & UI</li>
-    <li class="toc-item" data-id="6">6. Security principles</li>
-    <li class="toc-item" data-id="7">7. Front-end applications</li>
-    <li class="toc-item" data-id="8">8. AI tools</li>
-    <li class="toc-item" data-id="9">9. Agile methodologies</li>
-    <li class="toc-item" data-id="10">10. Documentation</li>
-  </ul>
-</div>
+    <h2 class="knowledge-title">Knowledge</h2>
+    <div class="container">
+      <div class="page-layout">
+        <div class="layout">
+          <ul>
+            <li class="toc-item" data-id="1">1. Javascript Events</li>
+            <li class="toc-item" data-id="2">2. API integration</li>
+            <li class="toc-item" data-id="3">3. Developing principles</li>
+            <li class="toc-item" data-id="4">4. WCAG standards</li>
+            <li class="toc-item" data-id="5">5. UX & UI</li>
+            <li class="toc-item" data-id="6">6. Security principles</li>
+            <li class="toc-item" data-id="7">7. Front-end applications</li>
+            <li class="toc-item" data-id="8">8. AI tools</li>
+            <li class="toc-item" data-id="9">9. Agile methodologies</li>
+            <li class="toc-item" data-id="10">10. Documentation</li>
+          </ul>
+        </div>
+        <div class="list-container">
+          <ul class="knowledge-list">
+            <li data-id="1">
+              <div class="li-header">1. Javascript principles
+                <button class="dropdown-btn">Read more</button>
+              </div>
+              <div class="li-content">Describe how event handling in JavaScript is used to create interactive web
+                applications.</div>
+            </li>
+            <li data-id="2">
+              <div class="li-header">2. API usage
+                <button class="dropdown-btn">Read more</button>
+              </div>
+              <div class="li-content">Explain how APIs are used to retrieve and manipulate data in web applications.
+              </div>
+            </li>
+            <li data-id="3">
+              <div class="li-header">3. Developing principles
+                <button class="dropdown-btn">Read more</button>
+              </div>
+              <div class="li-content">Describe the principles of developing modular and reusable JavaScript components.
+              </div>
+            </li>
+            <li data-id="4">
+              <div class="li-header">4. WCAG standards
+                <button class="dropdown-btn">Read more</button>
+              </div>
+              <div class="li-content">Explain WCAG standards and how they are applied to create accessible interfaces.
+              </div>
+            </li>
+            <li data-id="5">
+              <div class="li-header">5. UX & UI
+                <button class="dropdown-btn">Read more</button>
+              </div>
+              <div class="li-content">Describe UX and UI principles and how they are used to create user-friendly
+                interfaces.</div>
+            </li>
+            <li data-id="6">
+              <div class="li-header">6. Security principles
+                <button class="dropdown-btn">Read more</button>
+              </div>
+              <div class="li-content">Explain basic security principles for protecting user data in web applications.
+              </div>
+            </li>
+            <li data-id="7">
+              <div class="li-header">7. Front-end applications
+                <button class="dropdown-btn">Read more</button>
+              </div>
+              <div class="li-content">Explain the basics of testing front-end applications, including the use of testing
+                tools such as Jest and Cypress for unit and end-to-end testing.</div>
+            </li>
+            <li data-id="8">
+              <div class="li-header">8. AI tools
+                <button class="dropdown-btn">Read more</button>
+              </div>
+              <div class="li-content">Explain how AI tools can be used to generate, analyze, and improve JavaScript
+                code, including performance optimization and code smell identification.</div>
+            </li>
+            <li data-id="9">
+              <div class="li-header">9. Agile methodologies
+                <button class="dropdown-btn">Read more</button>
+              </div>
+              <div class="li-content">Explain how agile methodologies, such as Scrum and Kanban, can be used to
+                structure and streamline the front-end development process.</div>
+            </li>
+            <li data-id="10">
+              <div class="li-header">10. Documentation
+                <button class="dropdown-btn">Read more</button>
+              </div>
+              <div class="li-content">Explain how documentation can be used to describe JavaScript functions,
+                components, and API calls, and the importance of consistent structure in documentation.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-
-  <div class="list-container">
-    <ul class="knowledge-list">
-  <li data-id="1">
-    <div class="li-header">1. Javascript principles
-      <button class="dropdown-btn">Read more</button>
-
-    </div>
-    <div class="li-content">Describe how event handling in JavaScript is used to create interactive web applications.</div>
-  </li>
-  <li data-id="2">
-    <div class="li-header">2. API usage
-      <button class="dropdown-btn">Read more</button>
-    </div>
-    <div class="li-content">Explain how APIs are used to retrieve and manipulate data in web applications.</div>
-  </li>
-  <li data-id="3">
-    <div class="li-header">3. Developing principles
-      <button class="dropdown-btn">Read more</button>
-    </div>
-    <div class="li-content">Describe the principles of developing modular and reusable JavaScript components.</div>
-  </li>
-  <li data-id="4">
-    <div class="li-header">4. WCAG standards
-      <button class="dropdown-btn">Read more</button>
-    </div>
-    <div class="li-content">Explain WCAG standards and how they are applied to create accessible interfaces.</div>
-  </li>
-  <li data-id="5">
-    <div class="li-header">5. UX & UI
-      <button class="dropdown-btn">Read more</button>
-    </div>
-    <div class="li-content">Describe UX and UI principles and how they are used to create user-friendly interfaces.</div>
-  </li>
-  <li data-id="6">
-    <div class="li-header">6. Security principles
-      <button class="dropdown-btn">Read more</button>
-    </div>
-    <div class="li-content">Explain basic security principles for protecting user data in web applications.</div>
-  </li>
-  <li data-id="7">
-    <div class="li-header">7. Front-end applications
-      <button class="dropdown-btn">Read more</button>
-    </div>
-    <div class="li-content">Explain the basics of testing front-end applications, including the use of testing tools such as Jest and Cypress for unit and end-to-end testing.</div>
-  </li>
-  <li data-id="8">
-    <div class="li-header">8. AI tools
-      <button class="dropdown-btn">Read more</button>
-    </div>
-    <div class="li-content">Explain how AI tools can be used to generate, analyze, and improve JavaScript code, including performance optimization and code smell identification.</div>
-  </li>
-  <li data-id="9">
-    <div class="li-header">9. Agile methodologies
-      <button class="dropdown-btn">Read more</button>
-    </div>
-    <div class="li-content">Explain how agile methodologies, such as Scrum and Kanban, can be used to structure and streamline the front-end development process.</div>
-  </li>
-  <li data-id="10">
-    <div class="li-header">10. Documentation
-      <button class="dropdown-btn">Read more</button>
-    </div>
-    <div class="li-content">Explain how documentation can be used to describe JavaScript functions, components, and API calls, and the importance of consistent structure in documentation.</div>
-  </li>
-</ul>
-
-  </div>
-</div>
-</div>
 
 
 
@@ -189,10 +211,12 @@
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore voluptate illo officiis laudantium voluptas
       ipsum.</p>
 
+
     <section id="section2">
       <div class="container-section2">
         <div id="vertical-line"></div>
         <div id="arrow"></div>
+
 
         <div class="skill">
           <div class="skill-content">
@@ -201,12 +225,14 @@
           </div>
         </div>
 
+
         <div class="skill">
           <div class="skill-content">
             <h3>Interactive Web Application</h3>
             <p>Create interactive web applications using JavaScript and DOM manipulation.</p>
           </div>
         </div>
+
 
         <div class="skill">
           <div class="skill-content">
@@ -215,6 +241,7 @@
           </div>
         </div>
 
+
         <div class="skill">
           <div class="skill-content">
             <h3>WCAG Standards</h3>
@@ -222,12 +249,14 @@
           </div>
         </div>
 
+
         <div class="skill">
           <div class="skill-content">
             <h3>UX/UI Principles</h3>
             <p>Design and develop user-friendly interfaces following UX/UI principles.</p>
           </div>
         </div>
+
 
         <div class="skill">
           <div class="skill-content">
@@ -237,6 +266,7 @@
           </div>
         </div>
 
+
         <div class="skill">
           <div class="skill-content">
             <h3>AGILE METHODOLOGY</h3>
@@ -245,12 +275,14 @@
           </div>
         </div>
 
+
         <div class="skill">
           <div class="skill-content">
             <h3>TESTING CODE</h3>
             <p>Write and execute automated unit tests for JavaScript functions and UI components using Jest.</p>
           </div>
         </div>
+
 
         <div class="skill">
           <div class="skill-content">
@@ -262,6 +294,7 @@
       </div>
     </section>
     <!-- section 3 - Knowledge assesment -->
+
 
     <section class="section_3">
       <h2> Knowledge assesment</h2>
@@ -279,7 +312,9 @@
           <li>Project submission – One (1) group submission in which each student’s individual contribution is assessed.
           </li>
 
+
         </ul>
+
 
       </article>
       <article class="assesments">
@@ -301,10 +336,14 @@
           but a failing grade can never be based solely on this form of assessment.
         </p>
 
+
       </article>
     </section>
 
+
   </main>
+
+
 
 
   <footer class="course-center-footer">
@@ -314,12 +353,14 @@
           <span class="logo-text">COURSE <br> PLAN</span>
         </div>
 
+
         <address>
           random address<br>
           Stockholm, Sweden<br>
           Phone: <a href="tel:+46123456789">+46 123 456 789</a><br>
           <a href="mailto:info@yourdomain.com">MAIL</a>
         </address>
+
 
         <div class="footer-social">
           <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -329,6 +370,7 @@
         </div>
       </div>
 
+
       <nav class="footer-links" aria-label="Footer">
         <ul>
           <li><strong>EXPLORE</strong></li>
@@ -337,6 +379,7 @@
           <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
           <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
         </ul>
+
 
         <ul>
           <li><strong>EXPLORE</strong></li>
@@ -348,6 +391,7 @@
       </nav>
     </div>
 
+
     <div class="footer-team-wrapper">
       <button class="team-nav team-nav-left" aria-label="Previous Team member">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -355,6 +399,7 @@
             stroke-linejoin="round" />
         </svg>
       </button>
+
 
       <div class="footer-team">
         <div class="team-track">
@@ -367,6 +412,7 @@
             </div>
           </div>
 
+
           <div class="team-slide">
             <img src="./images/benjame.webp" alt="Benjame" />
             <div class="member-meta">
@@ -375,6 +421,7 @@
                 rel="noopener">github.com/benjame</a>
             </div>
           </div>
+
 
           <div class="team-slide">
             <img src="./images/emelie-bild.jpg" alt="Emelie" />
@@ -385,6 +432,7 @@
             </div>
           </div>
 
+
           <div class="team-slide">
             <img src="./images/alg.jpg" alt="Mattias" />
             <div class="member-meta">
@@ -394,6 +442,7 @@
             </div>
           </div>
 
+
           <div class="team-slide">
             <img src="./images/Bild.jpg.jpeg" alt="Johannes" />
             <div class="member-meta">
@@ -402,6 +451,7 @@
                 rel="noopener">github.com/Johannes</a>
             </div>
           </div>
+
 
           <div class="team-slide">
             <img src="./images/screenshot-id.png" alt="Idris" />
@@ -414,6 +464,7 @@
         </div>
       </div>
 
+
       <button class="team-nav team-nav-right" aria-label="Next Team member">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -421,6 +472,7 @@
         </svg>
       </button>
     </div>
+
 
     <div class="footer-bar">
       <span>&copy; 2025 Your Company Name. All rights reserved.</span>
@@ -431,9 +483,22 @@
 
 
 
+
+
+
+
+
   <script src="script.js"></script>
 
+
   <script src="carousel.js"></script>
+
+
+
+
+
+
+
 
 
 
@@ -446,6 +511,10 @@
 
 
 
+
+
+
 </body>
+
 
 </html>
