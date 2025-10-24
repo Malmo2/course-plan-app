@@ -1,15 +1,13 @@
-const idrisId = document.getElementById('idris');
+const idrisId = document.getElementById("idris");
+idrisId.addEventListener("click", () => {
+  alert("https://github.com/Derainted");
+});
 
-  // Add click event
-  idrisId.addEventListener('click', () => {
-    alert('https://github.com/Derainted');
-  });
+const arrow = document.getElementById("arrow");
 
-  const arrow = document.getElementById('arrow');
-
-window.addEventListener('scroll', () => {
+window.addEventListener("scroll", () => {
   const scrollTop = window.scrollY;
-  const section = document.getElementById('section2');
+  const section = document.getElementById("section2");
   const sectionTop = section.offsetTop;
   const sectionHeight = section.offsetHeight;
 
@@ -18,5 +16,5 @@ window.addEventListener('scroll', () => {
   if (arrowPosition < 0) arrowPosition = 0;
   if (arrowPosition > sectionHeight - 30) arrowPosition = sectionHeight - 30;
 
-  arrow.style.top = arrowPosition + 'px';
+  arrow.style.top = arrowPosition + "px";
 });
