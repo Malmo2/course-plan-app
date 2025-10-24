@@ -1,222 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="description"
+    content="Frontend Development Course Plan - Learning resources and assessments in programming with focus on JavaScript">
+  <title>Frontend Development Course Plan - Chas Academy</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-
 </head>
 
-
 <body>
+  <!-- Skip to main content link for keyboard users -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <header>
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main navigation">
       <div class="navbar-container">
         <div class="logo">
-          <p> Kursplan</p>
+          <span class="logo-text-nav">Kursplan</span>
         </div>
 
-
-        <ul class="navbar-links">
+        <ul class="navbar-links" id="navbar-menu">
           <li class="nav-item">
-            <a href="#" class="nav-link" data-translate="nav-home">HOME</a>
+            <a href="#about" class="nav-link" data-translate="nav-home">HOME</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link" data-translate="nav-contactus">CONTACT US</a>
+            <a href="#contact" class="nav-link" data-translate="nav-contactus">CONTACT US</a>
           </li>
         </ul>
 
 
-        <main>
-
-
-
-
-          <div class="nav-actions">
-            <form class="search-form">
-              <input class="search-input" type="search" name="q" placeholder="Search..."
-                data-translate="search-placeholder" />
-              <button class="search-btn" type="submit" aria-label="Search">
-                <span>🔍</span>
-              </button>
-            </form>
-
-
-            <div class="language-toggle-wrapper">
-              <button class="language-toggle" id="language-toggle" aria-label="Change language">
-                <span class="language-option" data-lang="en">EN</span>
-                <span class="language-option" data-lang="sv">SV</span>
-                <span class="language-slider"></span>
-              </button>
-            </div>
-
-
-            <button class="theme-toggle" id="theme-toggle" title="Toggle light & dark theme" aria-label="auto"
-              aria-live="polite">
-              <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
-                <mask class="moon" id="moon-mask">
-                  <rect x="0" y="0" width="100%" height="100%" fill="white" />
-                  <circle cx="24" cy="10" r="6" fill="black" />
-                </mask>
-                <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
-                <g class="sun-beams" stroke="currentColor">
-                  <line x1="12" y1="1" x2="12" y2="3" />
-                  <line x1="12" y1="21" x2="12" y2="23" />
-                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-                  <line x1="1" y1="12" x2="3" y2="12" />
-                  <line x1="21" y1="12" x2="23" y2="12" />
-                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-                </g>
-              </svg>
+        <div class="nav-actions">
+          <form class="search-form" role="search">
+            <label for="search-input" class="visually-hidden">Search</label>
+            <input class="search-input" id="search-input" type="search" name="q" placeholder="Search..."
+              data-translate="search-placeholder" aria-label="Search courses and content" />
+            <button class="search-btn" type="submit" aria-label="Submit search">
+              <span aria-hidden="true">🔍</span>
             </button>
+          </form>
 
-
-            <button class="menu-toggle" aria-label="Toggle menu">
-              <span class="hamburger"></span>
+          <div class="language-toggle-wrapper">
+            <button class="language-toggle" id="language-toggle" aria-label="Change language. Current: English"
+              aria-pressed="false">
+              <span class="language-option" data-lang="en" aria-hidden="true">EN</span>
+              <span class="language-option active" data-lang="sv" aria-hidden="true">SV</span>
+              <span class="language-slider" aria-hidden="true"></span>
             </button>
           </div>
+
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+            <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+              <mask class="moon" id="moon-mask">
+                <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                <circle cx="24" cy="10" r="6" fill="black" />
+              </mask>
+              <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+              <g class="sun-beams" stroke="currentColor">
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+              </g>
+            </svg>
+          </button>
+
+          <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
+            aria-controls="navbar-menu">
+            <span class="hamburger"></span>
+          </button>
+        </div>
       </div>
     </nav>
   </header>
 
+  <main id="main-content">
 
-  <main>
-
-
-    <section class="hero">
-      <img src="./images/chas-academy-emblem.png" alt="Chas Academy Logo" class="hero-image">
+    <section class="hero" aria-labelledby="hero-title">
+      <img src="./images/chas-academy-emblem.png" alt="" class="hero-image" aria-hidden="true">
       <div class="hero-container">
-        <h1 class="hero-h1">Frontendutveckling</h1>
-        <a href="/images/2. Frontendutveckling 60 yhp.pdf" class="hero-btn">Läs mer</a>
+        <h1 id="hero-title" class="hero-h1">Frontendutveckling</h1>
+        <a href="/images/2. Frontendutveckling 60 yhp.pdf" class="hero-btn"
+          aria-label="Read more about Frontend Development course (PDF)">Läs mer</a>
       </div>
     </section>
 
-
-    <!---About Section-->
-    <section class="about">
+    <section id="about" class="about" aria-labelledby="about-title">
       <div class="about-container">
-        <h2 class="section-title">About Us</h2>
+        <h2 id="about-title" class="section-title">About Us</h2>
         <p class="section-text">
           Our mission is to provide learning resources and assessments in programming with a focus on JavaScript.
         </p>
       </div>
     </section>
 
-
-    <h2 class="knowledge-title">Knowledge</h2>
-    <div class="container">
-      <div class="page-layout">
-        <div class="layout">
-          <ul>
-            <li class="toc-item" data-id="1">1. Javascript Events</li>
-            <li class="toc-item" data-id="2">2. API integration</li>
-            <li class="toc-item" data-id="3">3. Developing principles</li>
-            <li class="toc-item" data-id="4">4. WCAG standards</li>
-            <li class="toc-item" data-id="5">5. UX & UI</li>
-            <li class="toc-item" data-id="6">6. Security principles</li>
-            <li class="toc-item" data-id="7">7. Front-end applications</li>
-            <li class="toc-item" data-id="8">8. AI tools</li>
-            <li class="toc-item" data-id="9">9. Agile methodologies</li>
-            <li class="toc-item" data-id="10">10. Documentation</li>
-          </ul>
-        </div>
-        <div class="list-container">
-          <ul class="knowledge-list">
-            <li data-id="1">
-              <div class="li-header">1. Javascript principles
-                <button class="dropdown-btn">Read more</button>
-              </div>
-              <div class="li-content">Describe how event handling in JavaScript is used to create interactive web
-                applications.</div>
-            </li>
-            <li data-id="2">
-              <div class="li-header">2. API usage
-                <button class="dropdown-btn">Read more</button>
-              </div>
-              <div class="li-content">Explain how APIs are used to retrieve and manipulate data in web applications.
-              </div>
-            </li>
-            <li data-id="3">
-              <div class="li-header">3. Developing principles
-                <button class="dropdown-btn">Read more</button>
-              </div>
-              <div class="li-content">Describe the principles of developing modular and reusable JavaScript components.
-              </div>
-            </li>
-            <li data-id="4">
-              <div class="li-header">4. WCAG standards
-                <button class="dropdown-btn">Read more</button>
-              </div>
-              <div class="li-content">Explain WCAG standards and how they are applied to create accessible interfaces.
-              </div>
-            </li>
-            <li data-id="5">
-              <div class="li-header">5. UX & UI
-                <button class="dropdown-btn">Read more</button>
-              </div>
-              <div class="li-content">Describe UX and UI principles and how they are used to create user-friendly
-                interfaces.</div>
-            </li>
-            <li data-id="6">
-              <div class="li-header">6. Security principles
-                <button class="dropdown-btn">Read more</button>
-              </div>
-              <div class="li-content">Explain basic security principles for protecting user data in web applications.
-              </div>
-            </li>
-            <li data-id="7">
-              <div class="li-header">7. Front-end applications
-                <button class="dropdown-btn">Read more</button>
-              </div>
-              <div class="li-content">Explain the basics of testing front-end applications, including the use of testing
-                tools such as Jest and Cypress for unit and end-to-end testing.</div>
-            </li>
-            <li data-id="8">
-              <div class="li-header">8. AI tools
-                <button class="dropdown-btn">Read more</button>
-              </div>
-              <div class="li-content">Explain how AI tools can be used to generate, analyze, and improve JavaScript
-                code, including performance optimization and code smell identification.</div>
-            </li>
-            <li data-id="9">
-              <div class="li-header">9. Agile methodologies
-                <button class="dropdown-btn">Read more</button>
-              </div>
-              <div class="li-content">Explain how agile methodologies, such as Scrum and Kanban, can be used to
-                structure and streamline the front-end development process.</div>
-            </li>
-            <li data-id="10">
-              <div class="li-header">10. Documentation
-                <button class="dropdown-btn">Read more</button>
-              </div>
-              <div class="li-content">Explain how documentation can be used to describe JavaScript functions,
-                components, and API calls, and the importance of consistent structure in documentation.</div>
-            </li>
-          </ul>
+    <section id="knowledge" class="knowledge-section" aria-labelledby="knowledge-title">
+      <h2 id="knowledge-title" class="knowledge-title">Knowledge</h2>
+      <div class="container">
+        <div class="page-layout">
+          <nav class="layout" aria-label="Knowledge topics table of contents">
+            <ul role="list">
+              <li>
+                <button class="toc-item" data-id="1" aria-expanded="false" aria-controls="knowledge-1">
+                  1. Javascript Events
+                </button>
+              </li>
+              <li>
+                <button class="toc-item" data-id="2" aria-expanded="false" aria-controls="knowledge-2">
+                  2. API integration
+                </button>
+              </li>
+              <li>
+                <button class="toc-item" data-id="3" aria-expanded="false" aria-controls="knowledge-3">
+                  3. Developing principles
+                </button>
+              </li>
+              <li>
+                <button class="toc-item" data-id="4" aria-expanded="false" aria-controls="knowledge-4">
+                  4. WCAG standards
+                </button>
+              </li>
+              <li>
+                <button class="toc-item" data-id="5" aria-expanded="false" aria-controls="knowledge-5">
+                  5. UX & UI
+                </button>
+              </li>
+              <li>
+                <button class="toc-item" data-id="6" aria-expanded="false" aria-controls="knowledge-6">
+                  6. Security principles
+                </button>
+              </li>
+              <li>
+                <button class="toc-item" data-id="7" aria-expanded="false" aria-controls="knowledge-7">
+                  7. Front-end applications
+                </button>
+              </li>
+              <li>
+                <button class="toc-item" data-id="8" aria-expanded="false" aria-controls="knowledge-8">
+                  8. AI tools
+                </button>
+              </li>
+              <li>
+                <button class="toc-item" data-id="9" aria-expanded="false" aria-controls="knowledge-9">
+                  9. Agile methodologies
+                </button>
+              </li>
+              <li>
+                <button class="toc-item" data-id="10" aria-expanded="false" aria-controls="knowledge-10">
+                  10. Documentation
+                </button>
+              </li>
+            </ul>
+          </nav>
+          <div class="list-container">
+            <ul class="knowledge-list" role="list">
+              <li id="knowledge-1" data-id="1">
+                <button class="li-header" aria-expanded="false" aria-controls="content-1">
+                  <span>1. Javascript principles</span>
+                </button>
+                <div id="content-1" class="li-content" role="region" aria-labelledby="knowledge-1">
+                  Describe how event handling in JavaScript is used to create interactive web applications.
+                </div>
+              </li>
+              <li id="knowledge-2" data-id="2">
+                <button class="li-header" aria-expanded="false" aria-controls="content-2">
+                  <span>2. API usage</span>
+                </button>
+                <div id="content-2" class="li-content" role="region" aria-labelledby="knowledge-2">
+                  Explain how APIs are used to retrieve and manipulate data in web applications.
+                </div>
+              </li>
+              <li id="knowledge-3" data-id="3">
+                <button class="li-header" aria-expanded="false" aria-controls="content-3">
+                  <span>3. Developing principles</span>
+                </button>
+                <div id="content-3" class="li-content" role="region" aria-labelledby="knowledge-3">
+                  Describe the principles of developing modular and reusable JavaScript components.
+                </div>
+              </li>
+              <li id="knowledge-4" data-id="4">
+                <button class="li-header" aria-expanded="false" aria-controls="content-4">
+                  <span>4. WCAG standards</span>
+                </button>
+                <div id="content-4" class="li-content" role="region" aria-labelledby="knowledge-4">
+                  Explain WCAG standards and how they are applied to create accessible interfaces.
+                </div>
+              </li>
+              <li id="knowledge-5" data-id="5">
+                <button class="li-header" aria-expanded="false" aria-controls="content-5">
+                  <span>5. UX & UI</span>
+                </button>
+                <div id="content-5" class="li-content" role="region" aria-labelledby="knowledge-5">
+                  Describe UX and UI principles and how they are used to create user-friendly interfaces.
+                </div>
+              </li>
+              <li id="knowledge-6" data-id="6">
+                <button class="li-header" aria-expanded="false" aria-controls="content-6">
+                  <span>6. Security principles</span>
+                </button>
+                <div id="content-6" class="li-content" role="region" aria-labelledby="knowledge-6">
+                  Explain basic security principles for protecting user data in web applications.
+                </div>
+              </li>
+              <li id="knowledge-7" data-id="7">
+                <button class="li-header" aria-expanded="false" aria-controls="content-7">
+                  <span>7. Front-end applications</span>
+                </button>
+                <div id="content-7" class="li-content" role="region" aria-labelledby="knowledge-7">
+                  Explain the basics of testing front-end applications, including the use of testing tools such as Jest
+                  and Cypress for unit and end-to-end testing.
+                </div>
+              </li>
+              <li id="knowledge-8" data-id="8">
+                <button class="li-header" aria-expanded="false" aria-controls="content-8">
+                  <span>8. AI tools</span>
+                </button>
+                <div id="content-8" class="li-content" role="region" aria-labelledby="knowledge-8">
+                  Explain how AI tools can be used to generate, analyze, and improve JavaScript code, including
+                  performance optimization and code smell identification.
+                </div>
+              </li>
+              <li id="knowledge-9" data-id="9">
+                <button class="li-header" aria-expanded="false" aria-controls="content-9">
+                  <span>9. Agile methodologies</span>
+                </button>
+                <div id="content-9" class="li-content" role="region" aria-labelledby="knowledge-9">
+                  Explain how agile methodologies, such as Scrum and Kanban, can be used to structure and streamline the
+                  front-end development process.
+                </div>
+              </li>
+              <li id="knowledge-10" data-id="10">
+                <button class="li-header" aria-expanded="false" aria-controls="content-10">
+                  <span>10. Documentation</span>
+                </button>
+                <div id="content-10" class="li-content" role="region" aria-labelledby="knowledge-10">
+                  Explain how documentation can be used to describe JavaScript functions, components, and API calls, and
+                  the importance of consistent structure in documentation.
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
+    <section id="skills" class="skills-section" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore voluptate illo officiis laudantium voluptas
+        ipsum.</p>
 
-
-
-    <h1>Skills</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore voluptate illo officiis laudantium voluptas
-      ipsum.</p>
-
-
-    <section id="section2">
       <div class="container-section2">
-        <div id="vertical-line"></div>
-        <div id="arrow"></div>
-
+        <div id="vertical-line" aria-hidden="true"></div>
+        <div id="arrow" aria-hidden="true"></div>
 
         <div class="skill">
           <div class="skill-content">
@@ -225,14 +267,12 @@
           </div>
         </div>
 
-
         <div class="skill">
           <div class="skill-content">
             <h3>Interactive Web Application</h3>
             <p>Create interactive web applications using JavaScript and DOM manipulation.</p>
           </div>
         </div>
-
 
         <div class="skill">
           <div class="skill-content">
@@ -241,7 +281,6 @@
           </div>
         </div>
 
-
         <div class="skill">
           <div class="skill-content">
             <h3>WCAG Standards</h3>
@@ -249,14 +288,12 @@
           </div>
         </div>
 
-
         <div class="skill">
           <div class="skill-content">
             <h3>UX/UI Principles</h3>
             <p>Design and develop user-friendly interfaces following UX/UI principles.</p>
           </div>
         </div>
-
 
         <div class="skill">
           <div class="skill-content">
@@ -266,7 +303,6 @@
           </div>
         </div>
 
-
         <div class="skill">
           <div class="skill-content">
             <h3>AGILE METHODOLOGY</h3>
@@ -275,14 +311,12 @@
           </div>
         </div>
 
-
         <div class="skill">
           <div class="skill-content">
             <h3>TESTING CODE</h3>
             <p>Write and execute automated unit tests for JavaScript functions and UI components using Jest.</p>
           </div>
         </div>
-
 
         <div class="skill">
           <div class="skill-content">
@@ -293,34 +327,28 @@
         </div>
       </div>
     </section>
-    <!-- section 3 - Knowledge assesment -->
 
-
-    <section class="section_3">
-      <h2> Knowledge assesment</h2>
-      <article class="assesments">
-        <h3> Summative Assessment</h3>
+    <section id="assessment" class="section_3" aria-labelledby="assessment-title">
+      <h2 id="assessment-title">Knowledge Assessment</h2>
+      <article class="assessments" aria-labelledby="summative-title">
+        <h3 id="summative-title">Summative Assessment</h3>
         <p>
-          Summative assessment evaluates students’ knowledge and skills retrospectively,
+          Summative assessment evaluates students' knowledge and skills retrospectively,
           summarizing what the student has achieved at the time of examination.
-          he summative assessment covers all course objectives and takes place at the following designated examination
+          The summative assessment covers all course objectives and takes place at the following designated examination
           points:
         </p>
         <ul>
           <li>Written knowledge test – One (1) individual assessment of theoretical knowledge.</li>
           <li>Written reflection – One (1) individual report explaining personal solutions and approaches.</li>
-          <li>Project submission – One (1) group submission in which each student’s individual contribution is assessed.
+          <li>Project submission – One (1) group submission in which each student's individual contribution is assessed.
           </li>
-
-
         </ul>
-
-
       </article>
-      <article class="assesments">
-        <h3> Formative assesments</h3>
+      <article class="assessments" aria-labelledby="formative-title">
+        <h3 id="formative-title">Formative Assessments</h3>
         <p>
-          Formative assessment evaluates students’ knowledge and skills continuously during the interactive learning
+          Formative assessment evaluates students' knowledge and skills continuously during the interactive learning
           activities of the course.
           The purpose is to make assessment more efficient while supporting the learning process. Formative assessment
           takes place during:
@@ -335,147 +363,135 @@
           Students may achieve course objectives prior to the summative examinations through formative assessment,
           but a failing grade can never be based solely on this form of assessment.
         </p>
-
-
       </article>
     </section>
-
 
   </main>
 
 
-
-
-  <footer class="course-center-footer">
+  <footer id="contact" class="course-center-footer">
     <div class="footer-main">
       <div class="footer-logo-contact">
-        <div class="footer-logo">
+        <div class="footer-logo" aria-label="Course Plan">
           <span class="logo-text">COURSE <br> PLAN</span>
         </div>
 
-
         <address>
-          random address<br>
+          Random Address<br>
           Stockholm, Sweden<br>
           Phone: <a href="tel:+46123456789">+46 123 456 789</a><br>
-          <a href="mailto:info@yourdomain.com">MAIL</a>
+          Email: <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
         </address>
 
-
-        <div class="footer-social">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <div class="footer-social" role="list" aria-label="Social media links">
+          <a href="#" aria-label="Visit our Facebook page" role="listitem"><i class="fab fa-facebook-f"
+              aria-hidden="true"></i></a>
+          <a href="#" aria-label="Visit our Twitter/X page" role="listitem"><i class="fab fa-x-twitter"
+              aria-hidden="true"></i></a>
+          <a href="#" aria-label="Visit our Instagram page" role="listitem"><i class="fab fa-instagram"
+              aria-hidden="true"></i></a>
+          <a href="#" aria-label="Visit our YouTube channel" role="listitem"><i class="fab fa-youtube"
+              aria-hidden="true"></i></a>
         </div>
       </div>
 
-
-      <nav class="footer-links" aria-label="Footer">
+      <nav class="footer-links" aria-label="Footer navigation">
         <ul>
           <li><strong>EXPLORE</strong></li>
-          <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-          <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-          <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-          <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+          <li><a href="#knowledge">Knowledge Topics</a></li>
+          <li><a href="#skills">Skills Development</a></li>
+          <li><a href="#assessment">Assessments</a></li>
+          <li><a href="#about">About Us</a></li>
         </ul>
 
-
         <ul>
-          <li><strong>EXPLORE</strong></li>
-          <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-          <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-          <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-          <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+          <li><strong>RESOURCES</strong></li>
+          <li><a href="#knowledge">Course Materials</a></li>
+          <li><a href="#skills">Learning Resources</a></li>
+          <li><a href="#assessment">Evaluation Criteria</a></li>
+          <li><a href="/images/2. Frontendutveckling 60 yhp.pdf">Course PDF</a></li>
         </ul>
       </nav>
     </div>
 
-
-    <div class="footer-team-wrapper">
-      <button class="team-nav team-nav-left" aria-label="Previous Team member">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <section class="footer-team-wrapper" aria-label="Team members">
+      <button class="team-nav team-nav-left" aria-label="View previous team member">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
           <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" />
         </svg>
       </button>
 
-
-      <div class="footer-team">
+      <div class="footer-team" role="region" aria-live="polite">
         <div class="team-track">
-          <div class="team-slide">
-            <img src="./images/anamariaprofil.jpg" alt="Ana Maria" />
+          <article class="team-slide">
+            <img src="./images/anamariaprofil.jpg" alt="Profile picture of Ana Maria" />
             <div class="member-meta">
-              <div class="member-name">Ana Maria</div>
-              <a class="member-github" href="https://github.com/anamaria" target="_blank"
-                rel="noopener">github.com/anamaria</a>
+              <h3 class="member-name">Ana Maria</h3>
+              <a class="member-github" href="https://github.com/anamaria" target="_blank" rel="noopener noreferrer"
+                aria-label="Visit Ana Maria's GitHub profile">github.com/anamaria</a>
             </div>
-          </div>
+          </article>
 
-
-          <div class="team-slide">
-            <img src="./images/benjame.webp" alt="Benjame" />
+          <article class="team-slide">
+            <img src="./images/benjame.webp" alt="Profile picture of Benjame" />
             <div class="member-meta">
-              <div class="member-name">Benjame</div>
-              <a class="member-github" href="https://github.com/benjame" target="_blank"
-                rel="noopener">github.com/benjame</a>
+              <h3 class="member-name">Benjame</h3>
+              <a class="member-github" href="https://github.com/benjame" target="_blank" rel="noopener noreferrer"
+                aria-label="Visit Benjame's GitHub profile">github.com/benjame</a>
             </div>
-          </div>
+          </article>
 
-
-          <div class="team-slide">
-            <img src="./images/emelie-bild.jpg" alt="Emelie" />
+          <article class="team-slide">
+            <img src="./images/emelie-bild.jpg" alt="Profile picture of Emelie" />
             <div class="member-meta">
-              <div class="member-name">Emelie</div>
-              <a class="member-github" href="https://github.com/emelie" target="_blank"
-                rel="noopener">github.com/emelie</a>
+              <h3 class="member-name">Emelie</h3>
+              <a class="member-github" href="https://github.com/emelie" target="_blank" rel="noopener noreferrer"
+                aria-label="Visit Emelie's GitHub profile">github.com/emelie</a>
             </div>
-          </div>
+          </article>
 
-
-          <div class="team-slide">
-            <img src="./images/alg.jpg" alt="Mattias" />
+          <article class="team-slide">
+            <img src="./images/alg.jpg" alt="Profile picture of Mattias" />
             <div class="member-meta">
-              <div class="member-name">Mattias</div>
-              <a class="member-github" href="https://github.com/mattias" target="_blank"
-                rel="noopener">github.com/mattias</a>
+              <h3 class="member-name">Mattias</h3>
+              <a class="member-github" href="https://github.com/mattias" target="_blank" rel="noopener noreferrer"
+                aria-label="Visit Mattias's GitHub profile">github.com/mattias</a>
             </div>
-          </div>
+          </article>
 
-
-          <div class="team-slide">
-            <img src="./images/Bild.jpg.jpeg" alt="Johannes" />
+          <article class="team-slide">
+            <img src="./images/Bild.jpg.jpeg" alt="Profile picture of Johannes" />
             <div class="member-meta">
-              <div class="member-name">Johannes</div>
-              <a class="member-github" href="https://github.com/Johannes" target="_blank"
-                rel="noopener">github.com/Johannes</a>
+              <h3 class="member-name">Johannes</h3>
+              <a class="member-github" href="https://github.com/Johannes" target="_blank" rel="noopener noreferrer"
+                aria-label="Visit Johannes's GitHub profile">github.com/Johannes</a>
             </div>
-          </div>
+          </article>
 
-
-          <div class="team-slide">
-            <img src="./images/screenshot-id.png" alt="Idris" />
+          <article class="team-slide">
+            <img src="./images/screenshot-id.png" alt="Profile picture of Idris" />
             <div class="member-meta">
-              <div class="member-name">Idris</div>
-              <a class="member-github" href="https://github.com/idris" target="_blank"
-                rel="noopener">github.com/idris</a>
+              <h3 class="member-name">Idris</h3>
+              <a class="member-github" href="https://github.com/idris" target="_blank" rel="noopener noreferrer"
+                aria-label="Visit Idris's GitHub profile">github.com/idris</a>
             </div>
-          </div>
+          </article>
         </div>
       </div>
 
-
-      <button class="team-nav team-nav-right" aria-label="Next Team member">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <button class="team-nav team-nav-right" aria-label="View next team member">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
           <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" />
         </svg>
       </button>
-    </div>
+    </section>
 
-
-    <div class="footer-bar">
-      <span>&copy; 2025 Your Company Name. All rights reserved.</span>
+    <div class="footer-bar" role="contentinfo">
+      <p>&copy; 2025 Chas Academy. All rights reserved.</p>
     </div>
   </footer>
 
@@ -483,22 +499,9 @@
 
 
 
-
-
-
-
-
   <script src="script.js"></script>
 
-
   <script src="carousel.js"></script>
-
-
-
-
-
-
-
 
 
 
@@ -511,10 +514,6 @@
 
 
 
-
-
-
 </body>
-
 
 </html>
